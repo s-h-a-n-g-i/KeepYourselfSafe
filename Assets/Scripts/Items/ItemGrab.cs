@@ -50,5 +50,8 @@ public class ItemGrab : MonoBehaviour, I_Interactive
         
     }
 
-
+    public bool usable()
+    {
+        return isUsable;
+    }
 }

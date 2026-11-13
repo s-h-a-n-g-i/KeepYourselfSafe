@@ -44,9 +44,21 @@ public class Interaction : MonoBehaviour
         if (Physics.Raycast(raycastCheckObject, out RaycastHit hit, interactionRange))
         {
             if (hit.collider.gameObject.TryGetComponent(out I_Interactive interactiveObject))
-                crosshair.SetActive(true);
+                if (interactiveObject.usable())
+                {
+                    crosshair.SetActive(false);
+                    crosshairUse.SetActive(true);
+                }
+                else
+                {
+                    crosshair.SetActive(true);
+                    crosshairUse.SetActive(false);
+                }
             else
+            {
                 crosshair.SetActive(false);
+                crosshairUse.SetActive(false);
+            }
         }
         else
         { crosshair.SetActive(false); }
