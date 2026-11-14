@@ -20,9 +20,14 @@ public class Death : MonoBehaviour
         
     }
 
+    public void dontSkipFadePls() 
+    {
+        StartCoroutine(FadeOut());
+    }
 
     public IEnumerator FadeOut()
     {
+        died = false;
         fadeoutRed.color = new Color(1, 0, 0, 1);
         for (int i = 130; i >= 0; i--)
         {
@@ -42,7 +47,6 @@ public class Death : MonoBehaviour
         GetComponent<PlayerMovement>().isCutScene = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        died = false;
     }
     public void Kys()
     {

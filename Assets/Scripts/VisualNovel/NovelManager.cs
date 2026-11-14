@@ -150,7 +150,7 @@ public class NovelManager : MonoBehaviour
         girlImage.sprite = glockGirl;
         yield return new WaitForSeconds(0.5f);
         
-        yield return death.FadeOut();
+        death.dontSkipFadePls();
     }
 
 }
