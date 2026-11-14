@@ -17,12 +17,13 @@ public class Death : MonoBehaviour
     private void OnEnable()
     {
         
-        StartCoroutine(FadeOut());
+        
     }
 
 
-    private IEnumerator FadeOut()
+    public IEnumerator FadeOut()
     {
+        BackToLife();
         fadeoutRed.color = new Color(1, 0, 0, 1);
         for (int i = 130; i >= 0; i--)
         {
