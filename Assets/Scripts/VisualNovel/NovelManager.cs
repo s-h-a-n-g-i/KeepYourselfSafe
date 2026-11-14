@@ -16,7 +16,10 @@ public class NovelManager : MonoBehaviour
 
     [SerializeField] private bool buttonsReset = true;
     [SerializeField] private bool firstTime = true;
-
+    [SerializeField] private Image girlImage; 
+    [SerializeField] private Sprite normalFaceGirl;
+    [SerializeField] private Sprite sadFaceGirl;
+    [SerializeField] private Sprite glockGirl;
     private void Update()
     {
         if (messages[messCounter].isItKillable) 
@@ -26,6 +29,7 @@ public class NovelManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        girlImage.sprite = normalFaceGirl;
         firstTime = true;
         StartCoroutine(JustEnabled());
     }
@@ -138,8 +142,12 @@ public class NovelManager : MonoBehaviour
     }
     IEnumerator WrongEnum()
     {
+        girlImage.sprite = sadFaceGirl;
         yield return E_WriteText(messages[messCounter].zlyWybor);
-        
+        yield return new WaitForSeconds(2f);
+
+        girlImage.sprite = glockGirl;
+        yield return new WaitForSeconds(0.5f);
         death.BackToLife();
     }
 

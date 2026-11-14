@@ -12,6 +12,5 @@ public class Microwave : MonoBehaviour, I_InteractiveJustPress
         GetComponent<Animator>().SetBool("Open",opened);
     }
 
-    
 
 }

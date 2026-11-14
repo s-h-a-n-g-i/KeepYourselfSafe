@@ -9,7 +9,7 @@ enum typeOfBoom
 public class WaterAndPaper : MonoBehaviour
 {
     [SerializeField] private typeOfBoom typWybuchu;
-
+    [SerializeField] private GameObject spawnToBlockDoors;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +17,7 @@ public class WaterAndPaper : MonoBehaviour
         {
             if (other.TryGetComponent<Fire>(out Fire f))
             {
+                spawnToBlockDoors.SetActive(true);
                 f.UseIt();
             }
         }
@@ -24,6 +25,7 @@ public class WaterAndPaper : MonoBehaviour
         {
             if (other.TryGetComponent<Toster>(out Toster f))
             {
+                spawnToBlockDoors.SetActive(true);
                 f.UseIt();
             }
         }
