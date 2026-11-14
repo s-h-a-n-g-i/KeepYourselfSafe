@@ -16,15 +16,15 @@ public class Death : MonoBehaviour
 
     private void OnEnable()
     {
-        if(fadeoutRed.IsActive())
-            StartCoroutine(FadeOut());
+        
+        StartCoroutine(FadeOut());
     }
 
 
     private IEnumerator FadeOut()
     {
         fadeoutRed.color = new Color(1, 0, 0, 1);
-        for (int i = 160; i >= 0; i--)
+        for (int i = 130; i >= 0; i--)
         {
             fadeoutRed.color = new Color(1, 0, 0, (float)i / 100f);
             yield return new WaitForSeconds(0.02f);
