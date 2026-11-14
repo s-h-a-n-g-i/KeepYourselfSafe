@@ -11,19 +11,24 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     [SerializeField] private bool isUsable;
     private InputAction lmb;
     private InputAction rmb;
+    private InputAction mouseLook;
+    //private InputAction interact;
 
     private PlayerMovement movement;
-    private InputAction mouseLook;
 
     private Vector3 prevPos;
 
     void Start()
     {
-        prevPos = transform.position;
-        mouseLook = InputSystem.actions.FindAction("Look");
+        
+        
         movement = GameObject.FindFirstObjectByType<PlayerMovement>();
+
+        mouseLook = InputSystem.actions.FindAction("Look");
         lmb = InputSystem.actions.FindAction("LMB");
         rmb = InputSystem.actions.FindAction("RMB");
+        //interact = InputSystem.actions.FindAction("Interact");
+
         player = GameObject.Find("Main Camera").transform;
         rb = GetComponent<Rigidbody>();
     }
@@ -37,11 +42,10 @@ public class ItemGrab : MonoBehaviour, I_Interactive
 
             float rmbClicked = rmb.ReadValue<float>();
 
-            if (rmbClicked > 0 && isUsable)
+            if (rmbClicked > 0)
                 RotateObject();
             else
                 EndRotateObject();
-
         }
 
         if (transform.position.y < -1)
@@ -81,6 +85,8 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     
     public void Interacted()
     {
+        if(!isInteracting)
+            prevPos = transform.position;
         GetComponent<BoxCollider>().isTrigger = true;
         rb.useGravity = false;
         transform.SetParent(player);

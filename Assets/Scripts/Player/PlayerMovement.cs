@@ -5,19 +5,23 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     //[HideInInspector]
-    public bool isCutScene = false;
 
+    public bool isCutScene = false;
     [SerializeField] private Camera cameraPlayer;
+
+    [Header("Walking Settings")]
     [SerializeField] private float walkSpeed = 6f;
     [SerializeField] private float gravity = 11.9f;
-
-
-    public float sens = 2f;
-
     [SerializeField] private float vievlimit = 80f;
 
+    public float sens = 2f;
+    [Header("Crouch Settings")]
+    [SerializeField] private float normalHeight = 2f;
+    [SerializeField] private float crouchHeight = 0.7f;
+
     private InputAction move; 
-    private InputAction mouseLook; 
+    private InputAction mouseLook;
+    private InputAction crouch;
 
     //[SerializeField] private LayerMask wallsLayerMask;
 
@@ -32,8 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        move = InputSystem.actions.FindAction("Move"); 
-        mouseLook = InputSystem.actions.FindAction("Look"); 
+        move = InputSystem.actions.FindAction("Move");
+        mouseLook = InputSystem.actions.FindAction("Look");
+        crouch = InputSystem.actions.FindAction("Crouch");
         speed = walkSpeed;
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -44,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isCutScene) return; 
         Walking();
+        Crouchin();
     }
 
 
@@ -90,6 +96,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void Crouchin()
+    {
+        characterController.height = crouch.ReadValue<float>() > 0 ? crouchHeight : normalHeight;
+        cameraPlayer.transform.localPosition = new Vector3(0, crouch.ReadValue<float>() > 0 ? crouchHeight/2 : normalHeight/2, 0);
+    }
 
 
 }
