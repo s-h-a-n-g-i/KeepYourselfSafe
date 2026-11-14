@@ -37,11 +37,11 @@ public class ItemGrab : MonoBehaviour, I_Interactive
 
     void Update()
     {
-        if (isInteracting) 
-        { 
+            float rmbClicked = rmb.ReadValue<float>();
+        if (isInteracting)
+        {
             EndInteraction();
             float interactionClicked = interaction.ReadValue<float>();
-            float rmbClicked = rmb.ReadValue<float>();
 
             if (interactionClicked > 0 && !itemUsedOnce)
             {
@@ -51,7 +51,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
             else if (!(interactionClicked > 0))
                 itemUsedOnce = false;
 
-            if (rmbClicked > 0)
+            if (rmbClicked > 0 && isInteracting)
                 RotateObject();
             else
                 EndRotateObject();
@@ -65,6 +65,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     {
         float buttonPressed = lmb.ReadValue<float>();
         if (buttonPressed > 0) return;
+        EndRotateObject();
         isInteracting = false;
         transform.SetParent(null);
         rb.useGravity = true;
