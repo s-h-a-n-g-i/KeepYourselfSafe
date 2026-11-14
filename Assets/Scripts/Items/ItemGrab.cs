@@ -11,19 +11,21 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     [SerializeField] private bool isUsable;
     private InputAction lmb;
     private InputAction rmb;
+    private InputAction interaction;
     private InputAction mouseLook;
     //private InputAction interact;
 
     private PlayerMovement movement;
 
     private Vector3 prevPos;
-
+    private bool itemUsedOnce = false;
     void Start()
     {
-        
-        
+
+
         movement = GameObject.FindFirstObjectByType<PlayerMovement>();
 
+        interaction = InputSystem.actions.FindAction("Interact");
         mouseLook = InputSystem.actions.FindAction("Look");
         lmb = InputSystem.actions.FindAction("LMB");
         rmb = InputSystem.actions.FindAction("RMB");
@@ -38,9 +40,16 @@ public class ItemGrab : MonoBehaviour, I_Interactive
         if (isInteracting) 
         { 
             EndInteraction();
-
-
+            float interactionClicked = interaction.ReadValue<float>();
             float rmbClicked = rmb.ReadValue<float>();
+
+            if (interactionClicked > 0 && !itemUsedOnce)
+            {
+                UseItem();
+                itemUsedOnce = true;
+            }
+            else if (!(interactionClicked > 0))
+                itemUsedOnce = false;
 
             if (rmbClicked > 0)
                 RotateObject();
@@ -78,7 +87,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
         movement.lockCamera = false;
     }
 
-    public void UseItem() 
+    virtual public void UseItem() 
     {
         
     }

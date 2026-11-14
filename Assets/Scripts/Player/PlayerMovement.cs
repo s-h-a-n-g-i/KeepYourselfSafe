@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(CharacterController), typeof(PlayerMovement))]
 public class PlayerMovement : MonoBehaviour
 {
     //[HideInInspector]
