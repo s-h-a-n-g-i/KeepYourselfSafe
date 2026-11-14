@@ -16,7 +16,8 @@ public class Death : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(FadeOut());
+        if(fadeoutRed.IsActive())
+            StartCoroutine(FadeOut());
     }
 
 
