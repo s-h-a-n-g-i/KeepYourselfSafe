@@ -16,9 +16,8 @@ public class ElevatorDeath : MonoBehaviour
     }
     private void Update()
     {
-        if (Physics.BoxCast(transform.position, sizeKiller, directionKiller, out RaycastHit hit))
-            if (hit.transform.TryGetComponent<Death>(out Death death))
-                death.Kys(playerSave);
+        if (Vector3.Distance(transform.position,player.position)<5)
+            player.GetComponent<Death>().Kys(playerSave);
         
 
     }

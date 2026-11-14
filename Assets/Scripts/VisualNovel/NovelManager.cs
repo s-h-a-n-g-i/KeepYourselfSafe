@@ -51,7 +51,7 @@ public class NovelManager : MonoBehaviour
     {
         firstTime = false;
         fadeImage.color = new Color(0, 0, 0, 1);
-        for (int i = 100; i >= 0; i--)
+        for (int i = 160; i >= 0; i--)
         {
             fadeImage.color = new Color(0, 0, 0, (float)i / 100f);
             yield return new WaitForSeconds(0.02f);
