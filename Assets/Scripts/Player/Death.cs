@@ -23,13 +23,13 @@ public class Death : MonoBehaviour
 
     public IEnumerator FadeOut()
     {
-        BackToLife();
         fadeoutRed.color = new Color(1, 0, 0, 1);
         for (int i = 130; i >= 0; i--)
         {
             fadeoutRed.color = new Color(1, 0, 0, (float)i / 100f);
             yield return new WaitForSeconds(0.02f);
         }
+        BackToLife();
     }
 
     void Update()
