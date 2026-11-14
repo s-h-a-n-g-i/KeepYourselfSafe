@@ -111,7 +111,7 @@ public class NovelManager : MonoBehaviour
 
     IEnumerator E_WriteText(string text)
     {
-        babeczkaText.text = "IMIE: ";
+        babeczkaText.text = "";
         for (int i = 0; i < text.Length; i++)
         {
             babeczkaText.text += text[i];

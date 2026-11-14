@@ -99,7 +99,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     {
         if(!isInteracting)
             prevPos = transform.position;
-        GetComponent<BoxCollider>().isTrigger = true;
+        GetComponent<Collider>().isTrigger = true;
         rb.useGravity = false;
         transform.SetParent(player);
         isInteracting = true;
