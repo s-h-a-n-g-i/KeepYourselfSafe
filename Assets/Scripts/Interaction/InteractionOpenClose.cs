@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-interface I_InteractiveOpenClose
+interface I_InteractiveJustPress
 {
     public void Interacted();
 }
@@ -32,7 +32,7 @@ public class InteractionOpenClose : MonoBehaviour
         {
             Ray raycastCheckObject = new Ray(interactionTransform.position, interactionTransform.forward * interactionRange);
             if (Physics.Raycast(raycastCheckObject, out RaycastHit hit, interactionRange))
-                if (hit.collider.gameObject.TryGetComponent(out I_InteractiveOpenClose interactiveObject)) interactiveObject.Interacted();
+                if (hit.collider.gameObject.TryGetComponent(out I_InteractiveJustPress interactiveObject)) interactiveObject.Interacted();
         }
     }
 
@@ -42,7 +42,7 @@ public class InteractionOpenClose : MonoBehaviour
         Ray raycastCheckObject = new Ray(interactionTransform.position, interactionTransform.forward);
         if (Physics.Raycast(raycastCheckObject, out RaycastHit hit, interactionRange))
         {
-            if (hit.collider.gameObject.TryGetComponent(out I_InteractiveOpenClose interactiveObject))
+            if (hit.collider.gameObject.TryGetComponent(out I_InteractiveJustPress interactiveObject))
                 crosshair.SetActive(true);
         }
         else

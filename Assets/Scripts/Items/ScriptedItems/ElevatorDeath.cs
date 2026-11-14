@@ -19,6 +19,5 @@ public class ElevatorDeath : MonoBehaviour
         if (Vector3.Distance(transform.position,player.position)<5)
             player.GetComponent<Death>().Kys(playerSave);
         
-
     }
 }
