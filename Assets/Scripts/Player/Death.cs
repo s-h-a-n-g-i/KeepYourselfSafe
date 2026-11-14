@@ -30,4 +30,15 @@ public class Death : MonoBehaviour
         Cursor.visible = true;
         died = true;
     }
+
+    public void Kys(Vector3 posToSave)
+    {
+        GetComponent<PlayerMovement>().isCutScene = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        died = true;
+
+        transform.position = posToSave;
+    }
+
 }

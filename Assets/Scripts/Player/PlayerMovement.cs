@@ -85,12 +85,12 @@ public class PlayerMovement : MonoBehaviour
 
         moving = (curSpeedX > 0 || curSpeedY > 0 || curSpeedX < 0 || curSpeedY < 0 ? true : false);
 
-
-
-        rotationX += -mouseVector.y * sens;
-        rotationX = Mathf.Clamp(rotationX, -vievlimit, vievlimit);
         if (!lockCamera)
         {
+
+            rotationX += -mouseVector.y * sens;
+            rotationX = Mathf.Clamp(rotationX, -vievlimit, vievlimit);
+        
             cameraPlayer.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, mouseVector.x * sens, 0);
         }

@@ -98,6 +98,8 @@ public class ItemGrab : MonoBehaviour, I_Interactive
             prevPos = transform.position;
         GetComponent<BoxCollider>().isTrigger = true;
         rb.useGravity = false;
+        rb.angularVelocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         transform.SetParent(player);
         isInteracting = true;
     }
