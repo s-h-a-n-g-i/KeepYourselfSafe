@@ -43,37 +43,26 @@ public class ItemOpenClose : MonoBehaviour, I_InteractiveOpenClose
         {
             if (openedByKey)
                 if (!opened)
-                    StartCoroutine(Open());
+                    Open();
                 else
-                    StartCoroutine(Close());
+                    Close();
         }
         else
             if (!opened)
-            StartCoroutine(Open());
+            Open();
         else
-            StartCoroutine(Close());
+            Close();
 
     }
 
-    private IEnumerator Open()
+    private void Open()
     {
         opened = true;
-        for (int i = 0; i <= 120; i++)
-        {
-            float x = (transform.localPosition.x / openPosition.x / 120);
-            float y = (transform.localPosition.y / openPosition.y / 120);
-            float z = (transform.localPosition.z / openPosition.z / 120);
-
-            Vector3 moveTracking = new Vector3(x,y,z);
-            transform.localPosition += moveTracking;
-            yield return new WaitForSeconds(1/120);
-        }
 
     }
-    private IEnumerator Close()
+    private void Close()
     {
         opened = false;
-        yield return new WaitForSeconds(1 / 120);
 
     }
 
