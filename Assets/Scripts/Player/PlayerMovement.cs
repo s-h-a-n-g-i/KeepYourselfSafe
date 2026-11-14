@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float gravity = 11.9f;
 
 
-    [SerializeField] private float sens = 2f;
+    public float sens = 2f;
 
     [SerializeField] private float vievlimit = 80f;
 
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private float rotationX = 0;
     private CharacterController characterController;
 
-
+    public bool lockCamera = false;
 
     void Start()
     {
@@ -83,9 +83,11 @@ public class PlayerMovement : MonoBehaviour
 
         rotationX += -mouseVector.y * sens;
         rotationX = Mathf.Clamp(rotationX, -vievlimit, vievlimit);
-        cameraPlayer.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, mouseVector.x * sens, 0);
-
+        if (!lockCamera)
+        {
+            cameraPlayer.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, mouseVector.x * sens, 0);
+        }
     }
 
 
