@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
+[RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class ItemGrab : MonoBehaviour, I_Interactive
 {
     private Rigidbody rb;
@@ -37,7 +37,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
 
     void Update()
     {
-            float rmbClicked = rmb.ReadValue<float>();
+        float rmbClicked = rmb.ReadValue<float>();
         if (isInteracting)
         {
             rb.angularVelocity = Vector3.zero;
@@ -71,7 +71,7 @@ public class ItemGrab : MonoBehaviour, I_Interactive
         isInteracting = false;
         transform.SetParent(null);
         rb.useGravity = true;
-        GetComponent<BoxCollider>().isTrigger = false;
+        GetComponent<Collider>().isTrigger = false;
 
     }
 
