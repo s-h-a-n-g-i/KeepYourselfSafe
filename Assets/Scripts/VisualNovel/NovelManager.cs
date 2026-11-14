@@ -137,6 +137,7 @@ public class NovelManager : MonoBehaviour
 
     public void WrongChoice()
     {
+        GameObject.FindFirstObjectByType<Death>().fadeoutRed.gameObject.SetActive(true);
         HideButtons();
         StartCoroutine(WrongEnum());
     }
