@@ -11,9 +11,9 @@ public enum TypDrzwi
 [RequireComponent(typeof(Animator))]
 public class DoorsElevatorOpen : MonoBehaviour
 {
-    TypDrzwi typeOfDoors;
+    [SerializeField] private TypDrzwi typeOfDoors;
     private bool openedByKey;
-
+    [SerializeField] private GameObject key;
  
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +22,7 @@ public class DoorsElevatorOpen : MonoBehaviour
         {
             if (!openedByKey)
             {
-                if (other.TryGetComponent<Key>(out Key c))
+                if (other.TryGetComponent<Key>(out Key c) && c.gameObject == key )
                 {
                     c.UseOnDoors();
                     GetComponent<Animator>().SetBool("Open", true);

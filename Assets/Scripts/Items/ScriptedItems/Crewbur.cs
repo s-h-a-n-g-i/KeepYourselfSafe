@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Crewbur : MonoBehaviour
+public class Crewbur : ItemGrab
 {
     public void UseOnDoors() 
     {

@@ -27,7 +27,7 @@ public class Mroznia : MonoBehaviour
 
     IEnumerator mrozon() 
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(czasMrozenia);
         player.GetComponent<Death>().Kys(playerSave);
     }
 }
