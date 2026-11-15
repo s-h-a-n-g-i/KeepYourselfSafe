@@ -1,10 +1,12 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NovelManager : MonoBehaviour
 {
+    [SerializeField] private string nameEndingScene = "spermscreen";
     [Header("Novel Settings")]
     [SerializeField] private NovelMessage[] messages;
     [Header("jak ktorys czarnuch to dotknie to lamie rece ~maciek")]
@@ -131,6 +133,10 @@ public class NovelManager : MonoBehaviour
         yield return E_WriteText(messages[messCounter].dobryWybor);
         messCounter++;
         buttonsReset = true;
+        if (messCounter > messages.Length)
+        {
+            SceneManager.LoadScene(nameEndingScene);
+        }
         yield return JustEnabled();
     }
 
