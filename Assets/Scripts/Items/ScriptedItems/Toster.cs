@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Toster : MonoBehaviour
+public class Toster : ItemGrab
 {
     public void UseIt()
     {
