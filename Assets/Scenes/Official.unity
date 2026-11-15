@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.43
+  m_AmbientIntensity: 0.61
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -7934,7 +7934,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: 7403e056bee3bd54294eefd3f5ecff38, type: 3}
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0cdd6da97d993e142a8caf1efec92864, type: 2}
+      objectReference: {fileID: 2100000, guid: d48bc68e063536b49ba020011c8efbc2, type: 2}
     - target: {fileID: -4683669308469848369, guid: 7403e056bee3bd54294eefd3f5ecff38, type: 3}
       propertyPath: 'm_Materials.Array.data[4]'
       value: 
@@ -18980,9 +18980,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5722356758743922052, guid: 5400648e75c5d354f915aafe42f9d2f7, type: 3}
-  - {fileID: 5661368570869617374, guid: 5400648e75c5d354f915aafe42f9d2f7, type: 3}
-  - {fileID: -6861143247195150387, guid: 5400648e75c5d354f915aafe42f9d2f7, type: 3}
+  - {fileID: 2100000, guid: 281f61df151996349b31ae702471f93c, type: 2}
+  - {fileID: 2100000, guid: 94f3ea7f3098da940bd14ba95de6a6e4, type: 2}
+  - {fileID: 2100000, guid: 1a94d558a2ab79c4b9fc531b1f55b1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19039,7 +19039,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5661368570869617374, guid: 5400648e75c5d354f915aafe42f9d2f7, type: 3}
+  - {fileID: 2100000, guid: 94f3ea7f3098da940bd14ba95de6a6e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
