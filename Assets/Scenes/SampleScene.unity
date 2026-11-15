@@ -245,7 +245,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &153104894
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &189470900
@@ -887,7 +887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &381378905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,8 +1001,8 @@ MonoBehaviour:
     zlyWybor: 'Ah... It seems you don''t know Uro-chan at all... '
     dobryWybor: 'Yay! Thank you so much Player-kun!
 
-      Uro-chan''s heart is
-      so doki-doki! >///<'
+      Uro-chan''s heart is so
+      doki-doki! >///<'
   - wiadomosc: 'Have you watched that new anime?
 
       I wonder... What kind of
@@ -1768,8 +1768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -286.853, y: -0.4960022}
-  m_SizeDelta: {x: 1146.365, y: 199.335}
+  m_AnchoredPosition: {x: -2.237, y: -0.4960022}
+  m_SizeDelta: {x: 1715.596, y: 199.335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549161147
 MonoBehaviour:
@@ -2089,8 +2089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149.416, y: -42.401}
-  m_SizeDelta: {x: 298.831, y: 84.802}
+  m_AnchoredPosition: {x: 365.1739, y: -155}
+  m_SizeDelta: {x: 503.417, y: 84.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688298056
 MonoBehaviour:
@@ -2514,7 +2514,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &818465298
@@ -2611,8 +2611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 149.4155, y: 42.401}
-  m_SizeDelta: {x: 298.831, y: 84.802}
+  m_AnchoredPosition: {x: 365.1739, y: 155}
+  m_SizeDelta: {x: 503.417, y: 84.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955226882
 MonoBehaviour:
@@ -2761,8 +2761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -149.4155, y: -42.401}
-  m_SizeDelta: {x: 298.831, y: 84.802}
+  m_AnchoredPosition: {x: -251.709, y: -42.401}
+  m_SizeDelta: {x: 503.417, y: 84.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1042817161
 MonoBehaviour:
@@ -3203,8 +3203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -149.4155, y: 42.401}
-  m_SizeDelta: {x: 298.831, y: 84.802}
+  m_AnchoredPosition: {x: -251.709, y: 42.401}
+  m_SizeDelta: {x: 503.417, y: 84.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513790101
 MonoBehaviour:
@@ -3673,8 +3673,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 584.0419, y: 5.058502}
-  m_SizeDelta: {x: 595.434, y: 210.44}
+  m_AnchoredPosition: {x: 0, y: 483}
+  m_SizeDelta: {x: 616.89, y: 419.511}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1682015212
 GameObject:
@@ -3735,7 +3735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -862251388, guid: c9ed9994e6f821345b5e64bc2e129174, type: 3}
+  m_Sprite: {fileID: -474496770, guid: ecc32fecf0ce78648b7ed11763ba8e98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1844787558
