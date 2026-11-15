@@ -3,7 +3,22 @@ guid: 5400648e75c5d354f915aafe42f9d2f7
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik czerwony
+    second: {fileID: 2100000, guid: 1a94d558a2ab79c4b9fc531b1f55b1ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik1
+    second: {fileID: 2100000, guid: 281f61df151996349b31ae702471f93c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik1.001
+    second: {fileID: 2100000, guid: 94f3ea7f3098da940bd14ba95de6a6e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

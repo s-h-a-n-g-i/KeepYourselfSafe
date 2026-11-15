@@ -3,7 +3,12 @@ guid: 07d536afa2d55ea4ca1d685cb7e7fb27
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cardboard
+    second: {fileID: 2100000, guid: 53ea284853dad0e439e99a12dc1b5779, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

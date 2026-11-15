@@ -3,7 +3,17 @@ guid: 7070b635b4ed3b14e9b362f0e196a5c4
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dol blat
+    second: {fileID: 2100000, guid: 94f3ea7f3098da940bd14ba95de6a6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gora blat
+    second: {fileID: 2100000, guid: 648dabbc5fe23ee46b5be79fce3bde07, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

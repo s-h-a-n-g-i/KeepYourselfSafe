@@ -3,7 +3,22 @@ guid: 6ec7bf0d2a5ac4742b1fd64971ce12c0
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: eb6a8c599baa06543907d3160f1ee8e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scianki
+    second: {fileID: 2100000, guid: b0a59b9e9fcb21a4d89ffc0594d00ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: szare
+    second: {fileID: 2100000, guid: 4d014f98f15f6df4ea1c00ce6d68c5d9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: 75767d7fd8a205e439077ecc554291ea
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: etykietka
+    second: {fileID: 2100000, guid: 6e366fd9b32a257449624ab203632739, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik1.001
+    second: {fileID: 2100000, guid: 94f3ea7f3098da940bd14ba95de6a6e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
