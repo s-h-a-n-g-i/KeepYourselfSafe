@@ -988,33 +988,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NovelManager
   messages:
-  - wiadomosc: elo cr
+  - wiadomosc: 'Uro-chan wants to eat something sweet desu.
+
+      C-could you maybe
+      go and buy something for me, please?'
     odpowiedzi:
-    - nic xd
-    - jajco
-    - chyb ty
-    - kys
-    isItKillable: 0
-    zlyWybor: 
-    dobryWybor: 'tez lubie '
-  - wiadomosc: sram ci na klate
-    odpowiedzi:
-    - n
-    - i
-    - g
-    - r
+    - ' Chocolate pudding'
+    - Strawberry Crepe
+    - Choco-mint ice cream
+    - 'Tri-colored dango '
     isItKillable: 1
-    zlyWybor: zle wybrales!
-    dobryWybor: dospermiony wybur!
-  - wiadomosc: lubisz jesc kupe
+    zlyWybor: 'Ah... It seems you don''t know Uro-chan at all... '
+    dobryWybor: 'Yay! Thank you so much Player-kun!
+
+      Uro-chan''s heart is
+      so doki-doki! >///<'
+  - wiadomosc: 'Have you watched that new anime?
+
+      I wonder... What kind of
+      anime Player-kun likes?'
     odpowiedzi:
-    - chyb ty
-    - n b ty
-    - sperma
-    - kys
+    - Romance
+    - Harem
+    - Shounen
+    - Ecchi
     isItKillable: 1
-    zlyWybor: to nie mile
-    dobryWybor: spk
+    zlyWybor: 'Uh... I didn''t know you like that kind of things...
+
+      I guess
+      Uro-chan was wrong about you'
+    dobryWybor: "hee-hee\u2026 I think that's what most boys likes.\r\nI don't get
+      it but...\r\nWill you show me your favorite one, next time?"
+  - wiadomosc: "Ah! It's Player-kun!\r\nUro-chan is sooo happy to see you again hehe.\r\nUm...
+      Player-kun\u2026\r\nYou like only me, right? Nobody else, right?\r\n"
+    odpowiedzi:
+    - Of course, I love you.
+    - I'm in love with you.
+    - 'Yes, I only like you. '
+    - You worry about it too much.
+    isItKillable: 1
+    zlyWybor: No... no it's okay I get it...
+    dobryWybor: 'B-baka! If u say it out loud like that... So embarrassing...!
+
+      My
+      heart can''t take it!'
+  - wiadomosc: "Um... What if\u2026 only what if! Don't imagine too much! What if\u2026
+      Player-kun took Uro-chan out on a date desu\u2026 Where would we go?\r\n"
+    odpowiedzi:
+    - ' Cinema'
+    - Park
+    - Cafe
+    - Aquarium
+    isItKillable: 1
+    zlyWybor: '    Um... Are you into that kind of things...?     Player-kun, Sumimasen
+      but i really have to go...'
+    dobryWybor: '  P-player-kun! Only imagining us there makes my kokoro skip a beat...    
+      Daisuki! Let''s go together~'
+  - wiadomosc: "Ugh\u2026 Oh no...  P-player-kun?!\r\nOh I'm sorry, you startled
+      me...\r\nYou see\u2026 I... I lost my beloved Tamagochi.\r\nCan you help me
+      find it? Pretty please!\r\n"
+    odpowiedzi:
+    - ' Yes'
+    - Okay
+    - i'll help you
+    - Sure
+    isItKillable: 1
+    zlyWybor: "Is that so\u2026 I can't count on you after all..."
+    dobryWybor: 'Ah! You''re so sugoi! Nya... desuu!
+
+      Thank you, arigato!
+
+'
   messCounter: 0
   guziki:
   - {fileID: 688298056}
@@ -1774,8 +1818,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2007,7 +2051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Death
   died: 0
   canvasVisualNovel: {fileID: 381378904}
-  fadeoutRed: {fileID: 0}
+  fadeoutRed: {fileID: 1335188869}
 --- !u!1 &688298054
 GameObject:
   m_ObjectHideFlags: 0
