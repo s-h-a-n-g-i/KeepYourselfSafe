@@ -1,16 +1,18 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 
 public class MenuButtons : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void StartGameButton()
     {
-        
+        //SceneManager
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SettingsButton()
     {
-        
+
+    }
+    public void ExitGameButton()
+    {
+
     }
 }
