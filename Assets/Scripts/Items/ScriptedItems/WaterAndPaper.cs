@@ -10,7 +10,7 @@ public class WaterAndPaper : MonoBehaviour
 {
     [SerializeField] private typeOfBoom typWybuchu;
     [SerializeField] private GameObject spawnToBlockDoors;
-
+    [SerializeField] private Vector3 PlayerPosPapr;
     private void OnTriggerEnter(Collider other)
     {
         if (typeOfBoom.paper == typWybuchu)
@@ -19,6 +19,7 @@ public class WaterAndPaper : MonoBehaviour
             {
                 spawnToBlockDoors.SetActive(true);
                 f.UseIt();
+                GameObject.FindFirstObjectByType<Death>().transform.position = PlayerPosPapr;
             }
         }
         else 
