@@ -109,4 +109,14 @@ public class ItemGrab : MonoBehaviour, I_Interactive
     {
         return isUsable;
     }
+
+    public GameObject GetGameObject()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    void I_Interactive.EndInteraction()
+    {
+        EndInteraction();
+    }
 }

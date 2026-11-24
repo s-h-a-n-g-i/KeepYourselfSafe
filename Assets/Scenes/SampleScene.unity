@@ -555,8 +555,8 @@ GameObject:
   - component: {fileID: 316884392}
   - component: {fileID: 316884391}
   - component: {fileID: 316884390}
-  - component: {fileID: 316884394}
   - component: {fileID: 316884395}
+  - component: {fileID: 316884396}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -657,20 +657,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &316884394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316884389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e46976a59f3c2941ab93e1f1c3fa630, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemGrab
-  isInteracting: 0
-  isUsable: 1
 --- !u!54 &316884395
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -698,6 +684,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &316884396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316884389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35005aea4ec40e9459c0980b104eddcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemsNew
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b15cacb0c881b4189ef342106e2f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NovelManager
+  nameEndingScene: spermscreen
   messages:
   - wiadomosc: 'Uro-chan wants to eat something sweet desu.
 
@@ -1860,7 +1859,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &549161148
@@ -4095,7 +4094,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1900337332
